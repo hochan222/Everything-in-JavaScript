@@ -37,7 +37,7 @@ io.sockets.on('connection', function (socket) {
 	});
 });
 
-ProcessingInstruction.on('SIGINT', function () {
+process.on('SIGINT', function () {
 	LED.writeSync(0);
 	LED.unexport();
 	pushButton.unexport();
