@@ -1,5 +1,5 @@
 ### Raspberrypi
-Raspberrypi Gpio connecttion Webserver
+Raspberrypi Gpio connection Webserver
 
 #### install nodejs && npm
 ```
