@@ -1,6 +1,11 @@
 ### Raspberrypi
 Raspberrypi Gpio connection Webserver
 
+#### Stack
+```
+socket.io, onoff (JS GPIO module), http, fs
+```
+
 #### install nodejs && npm
 ```
 sudo apt-get install -y nodejs
