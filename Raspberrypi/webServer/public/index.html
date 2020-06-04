@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Control LED light</h1>
+    <input id="light" type="checkbox">LED
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script>
+        var socket = io();
+        window.addEventListener('load', function() {
+            var lightbox = document.getElementById('light');
+            lightbox.addEventListener('change', function {
+                socket.emit('light', Number(this.checked));
+            });
+        });
+
+        socket.on('light', function (data) {
+            document.getElementById('light').checked = data;
+            socket.emit('light', data);
+        });
+    </script>
+</body>
+</html>
