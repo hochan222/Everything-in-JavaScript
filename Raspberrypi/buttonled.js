@@ -18,4 +18,4 @@ function unexportOnClose() {
 }
 
 // SIGINT === ctrl + c
-ProcessingInstruction.on('SIGINT', unexportOnClose);
+process.on('SIGINT', unexportOnClose);
