@@ -4,7 +4,7 @@
 <br>
 
 #### ☕ About Ray tracing
-<div style="background-color: #f6f8fa">
+<div style="background-color: #efefef">
 👉 In computer graphics, ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects.
 </div>
 
@@ -20,9 +20,6 @@
 ##### 🌼 raytrace_method 2
 ![raytrace_method2](./img/raytrace_method2.PNG)
 
-##### 🌼 raytrace_component
-![raytrace_component](./img/raytrace_component.PNG)
-
 </div>
 </details>
 
@@ -30,8 +27,21 @@
 <summary> ray trace circle  (눌러서 내용보기) </summary>
 <div markdown="1">
 
+##### 🌼 raytrace_component
+![raytrace_component](./img/raytrace_component.PNG)
+
 ##### 🌼 raytrace_circle
 ![raytrace_circle](./img/raytrace_circle.PNG)
+
+</div>
+</details>
+
+<details>
+<summary> ray trace shadow  (눌러서 내용보기) </summary>
+<div markdown="1">
+
+##### 🌼 raytrace_shadow
+![raytrace_shadow](./img/raytrace_shadow.PNG)
 
 </div>
 </details>
