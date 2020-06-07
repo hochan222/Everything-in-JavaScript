@@ -18,9 +18,11 @@ function draw() {
 
   // list of scene objects
   var list_of_scene_objects = [];
-  list_of_scene_objects.push(new Sphere(-4, -1, 10, 6, createVector(255, 0, 0)))
-  list_of_scene_objects.push(new Sphere(4, 1, 5, 4, createVector(0, 255, 0)))
-  list_of_scene_objects.push(new Sphere(0, 4, -2, 3, createVector(255, 255, 0)))
+  list_of_scene_objects.push(new Sphere(0, 7.5, 30, 3, createVector(255, 0, 0)))
+  list_of_scene_objects.push(new Sphere(10, 3, 10, 5, createVector(0, 0, 255)))
+  list_of_scene_objects.push(new Sphere(-10, 3, 10, 5, createVector(255, 255, 0)))
+  list_of_scene_objects.push(new Sphere(0, -2, 0, 5, createVector(0, 255, 0)))
+  list_of_scene_objects.push(new Sphere(-1.5, 5.5, 0, 2, createVector(254, 1, 154)))
 
   for (var pixel_x = 0; pixel_x < WINDOW_WIDTH; pixel_x += 1) {
     for (var pixel_y = 0; pixel_y < WINDOW_HEIGHT; pixel_y += 1) {
