@@ -71,8 +71,48 @@
 </details>
 
 <details>
-<summary> ray trace  (눌러서 내용보기) </summary>
+<summary> ray trace reflection recursion (눌러서 내용보기) </summary>
 <div markdown="1">
+
+##### 🌼 principle
+![raytrace_reflection_recursion](./img/raytrace_reflection_recursion.PNG)
+
+<details>
+<summary> Depth 1 </summary>
+<div markdown="1">
+
+![raytrace_reflection_recursion_depth_1](./img/raytrace_reflection_recursion_depth_1.PNG)
+
+</div>
+</details>
+<details>
+<summary> Depth 2 </summary>
+<div markdown="1">
+
+![raytrace_reflection_recursion_depth_2](./img/raytrace_reflection_recursion_depth_2.PNG)
+
+</div>
+</details>
+<details>
+<summary> Depth 3 </summary>
+<div markdown="1">
+
+![raytrace_reflection_recursion_depth_3](./img/raytrace_reflection_recursion_depth_1.PNG)
+
+</div>
+</details>
+<details>
+<summary> Depth 4 </summary>
+<div markdown="1">
+
+![raytrace_reflection_recursion_depth_4](./img/raytrace_reflection_recursion_depth_4.PNG)
+
+</div>
+</details>
+
+<br>
+
+![raytrace_reflection_recursion_light](./img/raytrace_reflection_recursion_light.PNG)
 
 </div>
 </details>
