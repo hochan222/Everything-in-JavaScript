@@ -40,6 +40,9 @@
 <summary> ray trace shadow  (눌러서 내용보기) </summary>
 <div markdown="1">
 
+[Phong_shading](https://en.wikipedia.org/wiki/Phong_shading)
+[Phong_reflection_model](https://en.wikipedia.org/wiki/Phong_reflection_model)
+
 ##### 🌼 Raytrace Shadow
 ![raytrace_shadow](./img/raytrace_shadow.PNG)
 ![raytrace_shadow_light](./img/raytrace_shadow_light.PNG)
