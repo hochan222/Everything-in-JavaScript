@@ -1,12 +1,47 @@
-# Kubeflow
-![Kubernetes](https://img.shields.io/badge/Platform-Kubernetes-blue?logo=Kubernetes)
-![Docker](https://img.shields.io/badge/Container-Docker-brightgreen?logo=Docker)
-![ML Tensorflow](https://img.shields.io/badge/ML-Tensorflow-orange?logo=Tensorflow)
+# Raytracing
+![javascript](https://img.shields.io/badge/Language-javascript-blue?logo=javascript)
 
-![kubeflow-logo](/Setting/img/kubeflow-logo.png)
+<br>
 
-#### The Machine Learning Toolkit for Kubernetes
+#### ☕ About Ray tracing
+<div style="background-color: #f6f8fa">
+👉 In computer graphics, ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects.
+</div>
 
-[쿠버네티스(kubernetes) 아키텍처](https://www.oss.kr/index.php/info_techtip/show/714d80e1-3977-4ca4-a223-69bd4d224987)
+<br>
 
-[Simple Ray Tracing 1/4](https://www.youtube.com/watch?v=mVD_p7KGfBc&feature=youtu.be)
+<details>
+<summary> 기본 원리  (눌러서 내용보기) </summary>
+<div markdown="1">
+
+##### 🌼 raytrace_method 1
+![raytrace_method](./img/raytrace_method.PNG)
+
+##### 🌼 raytrace_method 2
+![raytrace_method2](./img/raytrace_method2.PNG)
+
+##### 🌼 raytrace_component
+![raytrace_component](./img/raytrace_component.PNG)
+
+</div>
+</details>
+
+<details>
+<summary> ray trace circle  (눌러서 내용보기) </summary>
+<div markdown="1">
+
+##### 🌼 raytrace_circle
+![raytrace_circle](./img/raytrace_circle.PNG)
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary> 참고 자료  (눌러서 내용보기) </summary>
+<div markdown="1">
+
+##### 🌼 [Simple Ray Tracing 1/4](https://www.youtube.com/watch?v=mVD_p7KGfBc&feature=youtu.be)
+</div>
+</details>
