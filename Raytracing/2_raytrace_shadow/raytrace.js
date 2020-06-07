@@ -45,8 +45,27 @@ function draw() {
         var to_light_source = p5.Vector.sub(light_location, intersection_point)
         to_light_source.normalize()
 
+        // vector reflected ray
+        var reflected_ray = p5.Vector.sub(p5.Vector.mult(normal, 2 * p5.Vector.dot(to_light_source, normal)), to_light_source)
+        reflected_ray.normalize()
+
+        // cosine factor
+        var cos_with_lightsource = p5.Vector.dot(normal, to_light_source)
+        var cos_ray_to_reflection = p5.Vector.dot(reflected_ray, p5.Vector.mult(ray_direction, -1))
+
+        // clip cosine
+        cos_with_lightsource = constrain(cos_with_lightsource, 0, 1)
+        cos_ray_to_reflection = constrain(cos_ray_to_reflection, 0, 1)
+
+        // phong factor
+        cos_with_lightsource = pow(cos_with_lightsource, 2);
+        cos_ray_to_reflection = pow(cos_ray_to_reflection, 2);
+
+        // lighting factor
+        var lighting = cos_with_lightsource * cos_ray_to_reflection * 127;
+
         // point is 1 pixel dot
-        stroke(0, 0, 0)
+        stroke(255, 127 + lighting, 127 + lighting)
         point(pixel_x, 600 - pixel_y);
       } else {
         // background gradient

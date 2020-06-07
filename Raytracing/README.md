@@ -40,8 +40,13 @@
 <summary> ray trace shadow  (눌러서 내용보기) </summary>
 <div markdown="1">
 
-##### 🌼 raytrace_shadow
+##### 🌼 Raytrace Shadow
 ![raytrace_shadow](./img/raytrace_shadow.PNG)
+![raytrace_shadow_light](./img/raytrace_shadow_light.PNG)
+
+##### 🌼 Raytrace Shadow consider reflection light && phong
+![raytrace_shadow_reflect_light](./img/raytrace_shadow_reflect_light.PNG)
+![raytrace_shadow_phong](./img/raytrace_shadow_phong.PNG)
 
 </div>
 </details>
@@ -52,6 +57,9 @@
 <summary> 참고 자료  (눌러서 내용보기) </summary>
 <div markdown="1">
 
-##### 🌼 [Simple Ray Tracing 1/4](https://www.youtube.com/watch?v=mVD_p7KGfBc&feature=youtu.be)
+##### 🌼 [Simple Ray Tracing 1/4](https://youtu.be/mVD_p7KGfBc)
+##### 🌼 [Simple Ray Tracing 2/4](https://youtu.be/i1MYvwgJxSk)
+##### 🌼 [Simple Ray Tracing 3/4](https://youtu.be/_rNg5RkHeHU)
+
 </div>
 </details>
