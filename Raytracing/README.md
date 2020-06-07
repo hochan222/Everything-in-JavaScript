@@ -40,8 +40,8 @@
 <summary> ray trace shadow  (눌러서 내용보기) </summary>
 <div markdown="1">
 
-[Phong_shading](https://en.wikipedia.org/wiki/Phong_shading)
-[Phong_reflection_model](https://en.wikipedia.org/wiki/Phong_reflection_model)
+[Phong_shading](https://en.wikipedia.org/wiki/Phong_shading)  
+[Phong_reflection_model](https://en.wikipedia.org/wiki/Phong_reflection_model)  
 
 ##### 🌼 Raytrace Shadow
 ![raytrace_shadow](./img/raytrace_shadow.PNG)
@@ -50,6 +50,22 @@
 ##### 🌼 Raytrace Shadow consider reflection light && phong
 ![raytrace_shadow_reflect_light](./img/raytrace_shadow_reflect_light.PNG)
 ![raytrace_shadow_phong](./img/raytrace_shadow_phong.PNG)
+
+</div>
+</details>
+
+<details>
+<summary> ray trace multi sphere  (눌러서 내용보기) </summary>
+<div markdown="1">
+
+##### 🌼 color more obvious
+![raytrace_multi_sphere_color](./img/raytrace_multi_sphere_color.PNG)
+
+##### 🌼 random normalize
+![raytrace_multi_sphere_nomalize_random](./img/raytrace_multi_sphere_nomalize_random.PNG)
+
+##### 🌼 multi_sphere
+![raytrace_multi_sphere](./img/raytrace_multi_sphere.PNG)
 
 </div>
 </details>
@@ -63,6 +79,7 @@
 ##### 🌼 [Simple Ray Tracing 1/4](https://youtu.be/mVD_p7KGfBc)
 ##### 🌼 [Simple Ray Tracing 2/4](https://youtu.be/i1MYvwgJxSk)
 ##### 🌼 [Simple Ray Tracing 3/4](https://youtu.be/_rNg5RkHeHU)
+##### 🌼 [Simple Ray Tracing 4/4](https://youtu.be/koeU-AeUvt0)
 
 </div>
 </details>
