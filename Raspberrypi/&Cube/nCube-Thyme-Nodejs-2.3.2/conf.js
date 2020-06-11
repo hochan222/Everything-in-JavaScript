@@ -32,7 +32,7 @@ cse.mqttport    = '1883';
 cse.wsport      = '7577';
 
 // build ae
-ae.name         = 'edu6';
+ae.name         = 'iot-lab-park';
 
 ae.id           = 'S' + ae.name;
 
