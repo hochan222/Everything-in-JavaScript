@@ -4,7 +4,7 @@
 
 #define VCC_PIN 0
 #define GREEN_PIN 1
-#define BLUE_PIN 2
+#define BLUE_PIN 4
 
 int turn_on_green(){
 	printf("%s\n", "Green Light ON!");
