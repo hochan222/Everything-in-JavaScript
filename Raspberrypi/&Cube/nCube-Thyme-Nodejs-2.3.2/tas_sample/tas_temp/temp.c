@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 #define MAX_TIME 86
 #define DHT11PIN 25
 int dht11_val[5] = {0, 0, 0, 0, 0};
@@ -13,7 +14,7 @@ int dht11_read_val()
     float farenheit;
     for (i = 0; i < 5; i++)
 
-        dht11_val[i] = 0;W
+        dht11_val[i] = 0;
     pinMode(DHT11PIN, OUTPUT);
     digitalWrite(DHT11PIN, 0);
     delay(18);
