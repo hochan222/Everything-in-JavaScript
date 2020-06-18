@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdint.h>
 #include <stdio.h>
 #define MAX_TIME 86
 #define DHT11PIN 25
