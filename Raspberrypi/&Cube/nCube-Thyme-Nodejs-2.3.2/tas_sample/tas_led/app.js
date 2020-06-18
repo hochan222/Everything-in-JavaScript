@@ -12,6 +12,10 @@ var exec = require("child_process").exec;
 
 var wdt = require('./wdt');
 
+var Gpio = require('onoff').Gpio;
+var GREENLED = new Gpio(18,'out');
+var BLUELED = new Gpio(23,'out');
+
 var useparentport = '';
 var useparenthostname = '';
 
@@ -116,10 +120,19 @@ function on_receive(data) {
 
 
 function control_led(comm_num){
-    var cmd = 'sudo ./led ' + comm_num;
-    exec(cmd, function callback(error, stdout, stderr) {
-        console.log(stdout);
-    });
+    // var cmd = 'sudo ./led ' + comm_num;
+    // exec(cmd, function callback(error, stdout, stderr) {
+    //     console.log(stdout);
+    // });
+    if(comm_num == 1) {
+        GREENLED.writeSync(1);
+    } else if (comm_num == 2) {
+        GREENLED.writeSync(0);
+    } else if (comm_num == 3) {
+        BLUELED.writeSync(1);
+    } else if (comm_num == 4) {
+        BLUELED.writeSync(0);
+    }
 }
 
 var Serial = null;
