@@ -2,81 +2,76 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <unistd.h>
-
-#define MAX_TIME 86
-#define DHT11PIN 25
-int dht11_val[5] = {0, 0, 0, 0, 0};
-int dht11_temp[5] = {0, 0, 0, 0, 0};
-float farenheit_temp;
-
-int dht11_read_val()
+#define MAXTIMINGS    85
+#define DHTPIN        5 //BCM 24
+ 
+int dht11_dat[5] = { 0, 0, 0, 0, 0 };
+ 
+void read_dht11_dat()
 {
-    uint8_t lststate = HIGH;
-    uint8_t counter = 0;
-    uint8_t j = 0, i;
-    float farenheit;
-    for (i = 0; i < 5; i++)
-        dht11_val[i] = 0;
-
-    pinMode(DHT11PIN, OUTPUT);
-    digitalWrite(DHT11PIN, 0);
-    delay(18);
-    digitalWrite(DHT11PIN, 1);
-    delayMicroseconds(40);
-
-    pinMode(DHT11PIN, INPUT);
-
-    for (i = 0; i < MAX_TIME; i++)
+    uint8_t laststate    = HIGH;
+    uint8_t counter        = 0;
+    uint8_t j        = 0, i;
+    float    f; 
+ 
+    dht11_dat[0] = dht11_dat[1] = dht11_dat[2] = dht11_dat[3] = dht11_dat[4] = 0;
+ 
+    pinMode( DHTPIN, OUTPUT );
+    digitalWrite( DHTPIN, LOW );
+    delay( 18 );
+    digitalWrite( DHTPIN, HIGH );
+    delayMicroseconds( 40 );
+    pinMode( DHTPIN, INPUT );
+ 
+    for ( i = 0; i < MAXTIMINGS; i++ )
     {
         counter = 0;
-        while (digitalRead(DHT11PIN) == lststate)
+        while ( digitalRead( DHTPIN ) == laststate )
         {
             counter++;
-            delayMicroseconds(1);
-            if (counter == 255)
+            delayMicroseconds( 1 );
+            if ( counter == 255 )
+            {
                 break;
+            }
         }
-        lststate = digitalRead(DHT11PIN);
-        if (counter == 255)
+        laststate = digitalRead( DHTPIN );
+ 
+        if ( counter == 255 )
             break;
-        if ((i >= 4) && (i % 2 == 0))
+ 
+        if ( (i >= 4) && (i % 2 == 0) )
         {
-
-            dht11_val[j / 8] <<= 1;
-            if (counter > 50)
-                dht11_val[j / 8] |= 1;
+            dht11_dat[j / 8] <<= 1;
+            if ( counter > 50 /*16*/ )
+                dht11_dat[j / 8] |= 1;
             j++;
         }
     }
-    if ((j >= 40) && (dht11_val[4] == ((dht11_val[0] + dht11_val[1] + dht11_val[2] + dht11_val[3]) & 0xFF)))
+ 
+    if ( (j >= 40) &&
+         (dht11_dat[4] == ( (dht11_dat[0] + dht11_dat[1] + dht11_dat[2] + dht11_dat[3]) & 0xFF) ) )
     {
-
-        farenheit = dht11_val[2] * 9. / 5. + 32;
-        for (i = 0; i < 5; i++)
-
-            dht11_temp[i] = dht11_val[i];
-
-        farenheit_temp = farenheit;
-        printf("%d.%d %d.%d", dht11_temp[0], dht11_temp[1], dht11_temp[2], dht11_temp[3]);
-        return 1;
-    }
-    else
-    {
-
-        return 0;
+        f = dht11_dat[2] * 9. / 5. + 32;
+        printf( "Humidity = %d.%d %% Temperature = %d.%d C (%.1f F)\n",
+            dht11_dat[0], dht11_dat[1], dht11_dat[2], dht11_dat[3], f );
+    }else  {
+        printf( "Data not good, skip\n" );
     }
 }
-int main(int argc, char *argv[])
+ 
+int main( void )
 {
-
-    int i;
-    if (wiringPiSetup() == -1)
-        return -1;
-
-    while (dht11_read_val() == 0)
-
-        sleep(1);
-
-    return 0;
+    printf( "Raspberry Pi wiringPi DHT11 Temperature test program\n" );
+ 
+    if ( wiringPiSetup() == -1 )
+        exit( 1 );
+ 
+    while ( 1 )
+    {
+        read_dht11_dat();
+        delay( 2000 ); 
+    }
+ 
+    return(0);
 }
