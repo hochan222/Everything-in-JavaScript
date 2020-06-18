@@ -1,19 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<conf xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<tas>
-		<parenthostname>
-			localhost
-		</parenthostname>
-		<parentport>
-			3105
-		</parentport>
-	</tas>
-	<upload>
-		<ctname>
-			temp
-		</ctname>
-		<id>
-			temp
-		</id>
-	</upload>
-</conf>
+<m2m:conf xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <tas>
+        <parenthostname>localhost</parenthostname>
+        <parentport>3105</parentport>
+    </tas>
+    <download>
+        <ctname>temp</ctname>
+        <id>temp</id>
+    </download>
+</m2m:conf>
