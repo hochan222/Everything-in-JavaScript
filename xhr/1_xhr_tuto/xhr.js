@@ -1,29 +1,58 @@
 const getBtn = document.getElementById('get-btn');
 const postBtn = document.getElementById('post-btn');
 
-const sendHttpRequest = (method, url) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(method, url);
+const sendHttpRequest = (method, url, data) => {
+	const promise = new Promise((resolve, reject) => {
+		const xhr = new XMLHttpRequest();
+		xhr.open(method, url);
 
-    /* responseType을 지정해주면 다음과같이
-    ** const data = JSON.parse(xhr.response);
-    ** 파싱을 할 필요가 없어진다.
-    */
-    xhr.responseType = 'json';
+		/* responseType을 지정해주면 다음과같이
+		 ** const data = JSON.parse(xhr.response);
+		 ** 파싱을 할 필요가 없어진다.
+		 */
+		xhr.responseType = 'json';
+		if (data) {
+			xhr.setRequestHeader('Content-Type', 'application/json');
+		}
 
-    xhr.onload = () => {
-        const data = xhr.response
-        console.log(data);
-    }
+		xhr.onload = () => {
+			if (xhr.status >= 400) {
+				reject(xhr.response);
+			} else {
+				resolve(xhr.response);
+			}
+		};
 
-    xhr.send();
+        /*
+        ** When dealing with any network based IO all kinds of things could happen.
+        */
+		xhr.onerror = () => {
+			reject('Something went wrong!');
+		};
+
+		xhr.send(JSON.stringify(data));
+	});
+	return promise;
 };
 
 const getData = () => {
-    sendHttpRequest('GET', 'https://reqres.in/api/users');
-}
+	sendHttpRequest('GET', 'https://reqres.in/api/users').then((responseData) => {
+		console.log(responseData);
+	});
+};
 
-const sendData = () => {};
+const sendData = () => {
+	sendHttpRequest('POST', 'https://reqres.in/api/register', {
+		email: 'eve.holt@reqres.in',
+		password: 'pistol',
+	})
+		.then((responseData) => {
+			console.log(responseData);
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+};
 
 getBtn.addEventListener('click', getData);
 postBtn.addEventListener('click', sendData);
