@@ -1,5 +1,5 @@
 # XHR
-![javascript](https://img.shields.io/badge/Language-javascript-blue?logo=javascript)
+![javascript](https://img.shields.io/badge/Javascript-XMLHttpRequest-blue?logo=javascript)
 
 <br>
 
