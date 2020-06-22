@@ -31,6 +31,18 @@ defer, section, font: inherit
 
 ##### It returns a Promise that resolves to the Response to that request, whether it is successful or not.
 
+</div>
+</details>
+
+<details>
+<summary> Axios (눌러서 내용보기) </summary>
+<div markdown="1">
+
+[Fetch API_Github](https://github.com/axios/axios)
+
+##### Automatically Add Content-Type
+##### Automatically Throw Error
+
 ##### 🌼 img
 ![img](./img/.PNG)
 
