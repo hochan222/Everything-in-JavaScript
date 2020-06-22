@@ -13,16 +13,31 @@ __👉 XMLHttpRequest(XHR)은 AJAX 요청을 생성하는 JavaScript API입니�
 https://reqres.in/
 
 <details>
-<summary> 알게된 것들  (눌러서 내용보기) </summary>
+<summary> XMLHttpRequest  (눌러서 내용보기) </summary>
 <div markdown="1">
 
 defer, section, font: inherit
+
+</div>
+</details>
+
+<details>
+<summary> Fetch (눌러서 내용보기) </summary>
+<div markdown="1">
+
+[Fetch API_MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+##### Provides a definition for related concepts such as CORS and the HTTP origin header semantics, supplanting their separate definitions elsewhere.
+
+##### It returns a Promise that resolves to the Response to that request, whether it is successful or not.
 
 ##### 🌼 img
 ![img](./img/.PNG)
 
 </div>
 </details>
+
+<br>
 
 <details>
 <summary> Stack Overflow  (눌러서 내용보기) </summary>
