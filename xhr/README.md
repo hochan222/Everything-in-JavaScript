@@ -20,5 +20,7 @@ The name "XMLHttpRequest" has historic RTCIceTransportStateChangedEvent, it is N
 
 [Sending JavaScript Http Requests with XMLHttpRequest](https://www.youtube.com/watch?v=4K33w-0-p2c)
 
+[AJAX Crash Course (Vanilla JavaScript)](https://www.youtube.com/watch?v=82hnvUYY6QA)
+
 </div>
 </details>
