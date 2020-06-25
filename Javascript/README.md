@@ -23,16 +23,35 @@
 
 ##### 진도표
 
-| Number | Title | 격파 여부 |
-|:--------:|:--------:|:--------:|
-|1.1|[자바스크립트란?](https://ko.javascript.info/intro)|o|
-|1.2|[매뉴얼과 명세서](https://ko.javascript.info/manuals-specifications)|o|
-|1.3|[코드 에디터](https://ko.javascript.info/code-editors)|o|
-|1.4|[개발자 콘솔](https://ko.javascript.info/devtools)|o|
+| Number | Title | 격파 여부 | Number | Title | 격파 여부 |
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|1.1|[자바스크립트란?](https://ko.javascript.info/intro)|o|1.3|[코드 에디터](https://ko.javascript.info/code-editors)|o|
+|1.2|[매뉴얼과 명세서](https://ko.javascript.info/manuals-specifications)|o|1.4|[개발자 콘솔](https://ko.javascript.info/devtools)|o|
 
 </div>
 </details>
 
+<details>
+
+<summary> 자바스크립트 기초 (눌러서 내용보기) </summary>
+<div markdown="2">
+
+##### 진도표
+
+| Number | Title | 격파 여부 | Number | Title | 격파 여부 |
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|2.1|Hello, world!|o|2.2|코드 구조|o|
+|2.3|엄격 모드|o|2.4|변수와 상수|o|
+|2.5|자료형|o|2.6|alert, prxmpt, cxnfirm을 이용한 상호작용|o|
+|2.7|형 변환|o|2.8|기본 연산자와 수학|o|
+|2.9|비교 연산자|x|2.10|조건부 연산자 if와 ?|x|
+|2.11|논리 연산자|x|2.12|null 병합 연산자 '??'|x|
+|2.13|while과 fxr 반복문|x|2.14|switch문|x|
+|2.15|함수|x|2.16|함수 표현식|x|
+|2.17|화살표 함수 기초|x|2.18|기초 문법 요약|x|
+
+</div>
+</details>
 
 
 </div>

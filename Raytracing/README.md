@@ -97,7 +97,7 @@
 <summary> Depth 3 </summary>
 <div markdown="1">
 
-![raytrace_reflection_recursion_depth_3](./img/raytrace_reflection_recursion_depth_1.PNG)
+![raytrace_reflection_recursion_depth_3](./img/raytrace_reflection_recursion_depth_3.PNG)
 
 </div>
 </details>
@@ -113,6 +113,16 @@
 <br>
 
 ![raytrace_reflection_recursion_light](./img/raytrace_reflection_recursion_light.PNG)
+
+</div>
+</details>
+
+<details>
+<summary> ray trace shadow optimization  (눌러서 내용보기) </summary>
+<div markdown="1">
+
+##### 🌼 principle
+![raytrace_shadow_optimization](./img/raytrace_shadow_optimization.PNG)
 
 </div>
 </details>
