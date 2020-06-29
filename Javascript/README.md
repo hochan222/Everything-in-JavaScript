@@ -10,6 +10,8 @@
 
 <br>
 
+https://ko.javascript.info/
+
 <br>
 
 <details>
@@ -53,6 +55,21 @@
 </div>
 </details>
 
+<details>
+
+<summary> 코드 품질 (눌러서 내용보기) </summary>
+<div markdown="2">
+
+##### 진도표
+
+| Number | Title | 격파 여부 | Number | Title | 격파 여부 |
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|3.1|Chrome으로 디버깅하기|o|3.2|코딩 스타일|o|
+|3.3|주석|x|3.4|닌자 코드|x|
+|3.5|테스트 자동화와 Mocha|x|3.6|폴리필|x|
+
+</div>
+</details>
 
 </div>
 </details>
