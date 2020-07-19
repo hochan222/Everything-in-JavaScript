@@ -4,7 +4,7 @@
 <br>
 
 #### ☕ Mordern Javascript Tutorial
-<div style="background-color: #efefef">
+<div style="background-color: #dfdfdf">
 👉 모던 JavaScript 튜토리얼은 상세한 설명과 함께 JavaScript 기본 개념 및 고급 개념을 다시 한번 읽으면서 놓치고있는 개념은 무엇인지, 더 알아야 될 개념은 무엇인지 알아보자.
 </div>
 
