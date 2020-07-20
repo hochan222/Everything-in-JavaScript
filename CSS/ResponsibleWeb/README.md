@@ -11,9 +11,22 @@
 <br>
 
 <details>
-<summary> 기본 원리  (눌러서 내용보기) </summary>
+<summary> 알아야 할 지식  (눌러서 내용보기) </summary>
 <div markdown="1">
 
+##### Viewport
+
+``` html
+<meta name="viewport" content="width=device-width" />
+```
+``` css
+@viewport { width: device-width; }
+```
+
+https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/  
+https://drafts.csswg.org/css-device-adapt/  
+
+- - - 
 
 </div>
 </details>
